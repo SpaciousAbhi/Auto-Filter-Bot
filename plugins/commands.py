@@ -46,12 +46,11 @@ async def start(client, message):
     
     if (len(message.command) != 2) or (len(message.command) == 2 and message.command[1] == 'start'):
         buttons = [[
-            InlineKeyboardButton("+ 𝗔𝗱𝗱 𝗺𝗲 𝘁𝗼 𝘆𝗼𝘂𝗿 𝗴𝗿𝗼𝘂𝗽 +", url=f'http://t.me/{temp.U_NAME}?startgroup=start')
+            InlineKeyboardButton('⚡️ 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 𝗖𝗵𝗮𝗻𝗻𝗲𝗹', url=UPDATES_LINK),
+            InlineKeyboardButton('💡 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗚𝗿𝗼𝘂𝗽', url=SUPPORT_LINK)
         ],[
-            InlineKeyboardButton('⚡️ 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 ⚡️', url=UPDATES_LINK),
-            InlineKeyboardButton('💡 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗚𝗿𝗼𝘂𝗽 💡', url=SUPPORT_LINK)
+            InlineKeyboardButton('👨‍🚒 𝗛𝗲𝗹𝗽 👨‍🚒', callback_data='help')
         ],[
-            InlineKeyboardButton('👨‍🚒 𝗛𝗲𝗹𝗽', callback_data='help'),
             InlineKeyboardButton('📚 𝗔𝗯𝗼𝘂𝘁', callback_data='my_about'),
             InlineKeyboardButton('👤 𝗢𝘄𝗻𝗲𝗿', callback_data='my_owner')
         ]]

@@ -67,7 +67,7 @@ async def inline_search(bot, query):
 
 def get_reply_markup():
     buttons = [[
-        InlineKeyboardButton('⚡️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ⚡️', url=UPDATES_LINK),
-        InlineKeyboardButton('💡 Support Group 💡', url=SUPPORT_LINK)
+        InlineKeyboardButton('⚡️ 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 𝗖𝗵𝗮𝗻𝗻𝗲𝗹', url=UPDATES_LINK),
+        InlineKeyboardButton('💡 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗚𝗿𝗼𝘂𝗽', url=SUPPORT_LINK)
     ]]
     return InlineKeyboardMarkup(buttons)

@@ -30,8 +30,8 @@ async def start(client, message):
             await db.add_chat(message.chat.id, message.chat.title)
         wish = get_wish()
         btn = [[
-            InlineKeyboardButton('⚡️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ⚡️', url=UPDATES_LINK),
-            InlineKeyboardButton('💡 Support Group 💡', url=SUPPORT_LINK)
+            InlineKeyboardButton('⚡️ 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 𝗖𝗵𝗮𝗻𝗻𝗲𝗹', url=UPDATES_LINK),
+            InlineKeyboardButton('💡 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗚𝗿𝗼𝘂𝗽', url=SUPPORT_LINK)
         ]]
         await message.reply(text=f"<b>ʜᴇʏ {message.from_user.mention}, <i>{wish}</i>\nʜᴏᴡ ᴄᴀɴ ɪ ʜᴇʟᴘ ʏᴏᴜ??</b>", reply_markup=InlineKeyboardMarkup(btn))
         return 
@@ -107,7 +107,7 @@ async def start(client, message):
             reply_markup = InlineKeyboardMarkup(btn)
             await message.reply_photo(
                 photo=random.choice(PICS),
-                caption=f"👋 Hello {message.from_user.mention},\n\nPlease join my 'Updates Channel' and try again. 😇",
+                caption=f"👋 𝗛𝗲𝗹𝗹𝗼 {message.from_user.mention},\n\n𝗣𝗹𝗲𝗮𝘀𝗲 𝗷𝗼𝗶𝗻 𝗺𝘆 '𝗨𝗽𝗱𝗮𝘁𝗲𝘀 𝗖𝗵𝗮𝗻𝗻𝗲𝗹' 𝗮𝗻𝗱 𝘁𝗿𝘆 𝗮𝗴𝗮𝗶𝗻. 😇",
                 reply_markup=reply_markup,
                 parse_mode=enums.ParseMode.HTML
             )

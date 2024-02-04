@@ -95,51 +95,49 @@ I can't find the <b>{}</b> in my database! 🥲
 
 🚫 ᴘʟᴇᴀsᴇ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ᴄʟᴏsᴇ ʙᴜᴛᴛᴏɴ ɪꜰ ʏᴏᴜ ʜᴀᴠᴇ sᴇᴇɴ ᴛʜᴇ ᴍᴏᴠɪᴇ 🚫"""
 
-    WELCOME_TEXT = """👋 Hello {mention}, Welcome to {title} group! 💞"""
+    WELCOME_TEXT = """👋 𝗚𝗿𝗲𝗲𝘁𝗶𝗻𝗴𝘀, {mention}! 𝗦𝘁𝗲𝗽 𝗶𝗻𝘁𝗼 𝘁𝗵𝗲 𝗲𝗻𝗰𝗵𝗮𝗻𝘁𝗶𝗻𝗴 𝘄𝗼𝗿𝗹𝗱 𝗼𝗳 {title} 𝗴𝗿𝗼𝘂𝗽! 💞 𝗘𝘅𝗰𝗶𝘁𝗲𝗺𝗲𝗻𝘁 𝗮𝗻𝗱 𝗰𝗮𝗺𝗮𝗿𝗮𝗱𝗲𝗿𝗶𝗲 𝗮𝘄𝗮𝗶𝘁 𝘆𝗼𝘂! 🚀✨"""
 
-    HELP_TXT = """<b>Note - <spoiler>Try each command without any argument to see more details 😹</spoiler></b>"""
+    HELP_TXT = """<b>𝗡𝗼𝘁𝗲: 𝗧𝗿𝘆 𝗲𝗮𝗰𝗵 𝗰𝗼𝗺𝗺𝗮𝗻𝗱 𝘄𝗶𝘁𝗵𝗼𝘂𝘁 𝗮𝗻𝘆 𝗮𝗿𝗴𝘂𝗺𝗲𝗻𝘁 𝘁𝗼 𝘀𝗲𝗲 𝗺𝗼𝗿𝗲 𝗱𝗲𝘁𝗮𝗶𝗹𝘀! 😹</b>"""
     
-    ADMIN_COMMAND_TXT = """<b>Here is bot admin commands 👇
+    ADMIN_COMMAND_TXT = """<b>Here are the admin commands for the bot:
 
-/index_channels - to check how many index channel id added
-/stats - to get bot status
-/delete - to delete files using query
-/delete_all - to delete all indexed file
-/broadcast - to send message to all bot users
-/grp_broadcast - to send message to all groups
-/pin_broadcast - to send message as pin to all bot users.
-/pin_grp_broadcast - to send message as pin to all groups.
-/restart - to restart bot
-/leave - to leave your bot from particular group
-/unban_grp - to enable group
-/ban_grp - to disable group
-/ban_user - to ban a users from bot
-/unban_user - to unban a users from bot
-/users - to get all users details
-/chats - to get all groups
-/invite_link - to generate invite link
-/index - to index bot accessible channels
-/add_premium - to add user in premium
-/remove_premium - to remove user from premium</b>"""
+/index_channels - Check the number of added index channel IDs 📊
+/stats - Get bot status ℹ️
+/delete - Delete files using a query 🗑️
+/delete_all - Delete all indexed files 🚮
+/broadcast - Send a message to all bot users 📢
+/grp_broadcast - Broadcast a message to all groups 🌐
+/pin_broadcast - Send a pinned message to all bot users 📌
+/pin_grp_broadcast - Send a pinned message to all groups 📌
+/restart - Restart the bot 🔄
+/leave - Make the bot leave a particular group 🚪
+/unban_grp - Enable a group ✅
+/ban_grp - Disable a group ❌
+/ban_user - Ban a user from the bot 🚫
+/unban_user - Unban a user from the bot ✅
+/users - Get details of all users 🧑‍💻
+/chats - Get details of all groups 🌐
+/invite_link - Generate an invite link 🔗
+/index - Index bot-accessible channels 📑
+/add_premium - Add a user to the premium list 💎
+/remove_premium - Remove a user from the premium list 💔</b>"""
     
-    USER_COMMAND_TXT = """<b>Here is bot user commands 👇
+    USER_COMMAND_TXT = """<b>Here are some commands for users to navigate the bot:
 
-/start - to check bot alive or not
-/settings - to change group settings as your wish
-/set_template - to set custom imdb template
-/set_caption - to set custom bot files caption
-/set_shortlink - group admin can set custom shortlink
-/get_custom_settings - to get your group settings details
-/set_welcome - to set custom new joined users welcome message for group
-/set_tutorial - to set custom tutorial link in result page button
-/id - to check group or channel id
-/my_plan - to check your plan details
-/plans - to get plan details</b>"""
+/start - Check if the bot is alive 🤖
+/settings - Customize group settings as you wish ⚙️
+/set_template - Set a custom IMDb template 🌟
+/set_caption - Personalize the bot files' caption 📝
+/set_shortlink - Admins can set a custom shortlink 🔗
+/get_custom_settings - Retrieve your group settings details 📊
+/set_welcome - Craft a warm welcome message for new members 👋
+/set_tutorial - Set a custom tutorial link in the result page button 📘
+/id - Check your group or channel ID 🆔
+/my_plan - Review your plan details 📆
+/plans - Explore available plan details 💡</b>"""
 
     SOURCE_TXT = """<b>𝗡𝗢𝗧𝗘:
 
-⚠️ 𝗧𝗵𝗶𝘀 𝗕𝗼𝘁 𝗶𝘀 𝗡𝗼𝘁 𝗮𝗻 𝗢𝗽𝗲𝗻 𝗦𝗼𝘂𝗿𝗰𝗲 𝗣𝗿𝗼𝗷𝗲𝗰𝘁!
-𝗧𝗵𝗮𝗻𝗸𝘀 𝘁𝗼 𝗥𝗞_𝗕𝗼𝘁𝘇 (𝗥𝗶𝘀𝗵𝗶𝗸𝗲𝘀𝗵), 𝗠𝗞𝗡_𝗕𝗼𝘁𝘀 & 𝗘𝘃𝗮𝗹𝗺𝗮𝗿𝗶𝗮 𝗗𝗲𝘃𝘀 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗕𝗮𝘀𝗲 𝗖𝗼𝗱𝗲𝘀.
-𝗦𝗽𝗲𝗰𝗶𝗮𝗹 𝗧𝗵𝗮𝗻𝗸𝘀 𝘁𝗼 𝗠𝘆 𝗧𝗚 𝗙𝗿𝗶𝗲𝗻𝗱𝘀 𝘁𝗼𝗼.
+⚠️ 𝗧𝗵𝗶𝘀 𝗕𝗼𝘁 𝗶𝘀 𝗡𝗼𝘁 𝗮𝗻 𝗢𝗽𝗲𝗻 𝗦𝗼𝘂𝗿𝗰𝗲 𝗣𝗿𝗼𝗷𝗲𝗰𝘁! 𝗧𝗵𝗮𝗻𝗸𝘀 𝘁𝗼 𝗥𝗞_𝗕𝗼𝘁𝘇 (𝗥𝗶𝘀𝗵𝗶𝗸𝗲𝘀𝗵), 𝗠𝗞𝗡_𝗕𝗼𝘁𝘀 & 𝗘𝘃𝗮𝗹𝗺𝗮𝗿𝗶𝗮 𝗗𝗲𝘃𝘀 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗕𝗮𝘀𝗲 𝗖𝗼𝗱𝗲𝘀.𝗦𝗽𝗲𝗰𝗶𝗮𝗹 𝗧𝗵𝗮𝗻𝗸𝘀 𝘁𝗼 𝗠𝘆 𝗧𝗚 𝗙𝗿𝗶𝗲𝗻𝗱𝘀 𝘁𝗼𝗼.
 
-𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗱 𝗯𝘆 @𝗩𝗲𝗻𝗼𝗺𝗦𝘁𝗼𝗻𝗲𝗡𝗲𝘁𝘄𝗼𝗿𝗸👨‍💻"""
+𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗱 𝗯𝘆 @VenomStoneNetwork👨‍💻</b>"""

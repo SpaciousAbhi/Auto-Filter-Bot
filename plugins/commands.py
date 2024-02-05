@@ -75,7 +75,7 @@ async def start(client, message):
             reply_markup = None
         else:
             btn = [[
-                InlineKeyboardButton("📌 Get File 📌", url=f'https://t.me/{temp.U_NAME}?start={verify_status["link"]}')
+                InlineKeyboardButton("📎 𝗚𝗲𝘁 𝗙𝗶𝗹𝗲 📌", url=f'https://t.me/{temp.U_NAME}?start={verify_status["link"]}')
             ]]
             reply_markup = InlineKeyboardMarkup(btn)
         await message.reply(f"✅ You successfully verified until: {get_readable_time(VERIFY_EXPIRE)}", reply_markup=reply_markup, protect_content=True)
@@ -88,9 +88,9 @@ async def start(client, message):
             await update_verify_status(message.from_user.id, verify_token=token, link="" if mc == 'inline_verify' else mc)
             link = await get_shortlink(SHORTLINK_URL, SHORTLINK_API, f'https://t.me/{temp.U_NAME}?start=verify_{token}')
             btn = [[
-                InlineKeyboardButton("🧿 Verify 🧿", url=link)
+                InlineKeyboardButton("🔍 𝗩𝗲𝗿𝗶𝗳𝘆 🧿", url=link)
             ],[
-                InlineKeyboardButton('🗳 Tutorial 🗳', url=VERIFY_TUTORIAL)
+                InlineKeyboardButton('📘 𝗧𝘂𝘁𝗼𝗿𝗶𝗮𝗹 🗳', url=VERIFY_TUTORIAL)
             ]]
             await message.reply("You not verified today! Kindly verify now. 🔐", reply_markup=InlineKeyboardMarkup(btn), protect_content=True)
             return
@@ -102,7 +102,7 @@ async def start(client, message):
         btn = await is_subscribed(client, message, settings['fsub'])
         if btn:
             btn.append(
-                [InlineKeyboardButton("🔁 Try Again 🔁", callback_data=f"checksub#{mc}")]
+                [InlineKeyboardButton("🔄 𝗥𝗲𝘁𝗿𝘆 🔁", callback_data=f"checksub#{mc}")]
             )
             reply_markup = InlineKeyboardMarkup(btn)
             await message.reply_photo(
@@ -161,9 +161,9 @@ async def start(client, message):
         if not await db.has_premium_access(message.from_user.id):
             link = await get_shortlink(settings['url'], settings['api'], f"https://t.me/{temp.U_NAME}?start=shortlink_{grp_id}_{file_id}")
             btn = [[
-                InlineKeyboardButton("♻️ Get File ♻️", url=link)
+                InlineKeyboardButton("📂 𝗚𝗲𝘁 𝗙𝗶𝗹𝗲 📂", url=link)
             ],[
-                InlineKeyboardButton("📍 ʜᴏᴡ ᴛᴏ ᴏᴘᴇɴ ʟɪɴᴋ 📍", url=settings['tutorial'])
+                InlineKeyboardButton("🌐 𝗛𝗼𝘄 𝘁𝗼 𝗢𝗽𝗲𝗻 𝗟𝗶𝗻𝗸 🌐", url=settings['tutorial'])
             ]]
             await message.reply(f"[{get_size(files.file_size)}] {files.file_name}\n\nYour file is ready, Please get using this link. 👍", reply_markup=InlineKeyboardMarkup(btn), protect_content=True)
             return
@@ -526,7 +526,7 @@ async def give_premium_cmd_handler(client, message):
             
             await client.send_message(
                 chat_id=user_id,
-                text=f"<b>ᴘʀᴇᴍɪᴜᴍ ᴀᴅᴅᴇᴅ ᴛᴏ ʏᴏᴜʀ ᴀᴄᴄᴏᴜɴᴛ ꜰᴏʀ {time} ᴇɴᴊᴏʏ 😀\n</b>",                
+                text=f"<b>𝗣𝗿𝗲𝗺𝗶𝘂𝗺 𝗮𝗱𝗱𝗲𝗱 𝘁𝗼 𝘆𝗼𝘂𝗿 𝗮𝗰𝗰𝗼𝘂𝗻𝘁 𝗳𝗼𝗿 {time}. 𝗘𝗻𝗷𝗼𝘆! 😀\n</b>",                
             )
         else:
             await message.reply_text("Invalid time format. Please use '1day for days', '1hour for hours', or '1min for minutes', or '1month for months' or '1year for year'")
@@ -559,13 +559,13 @@ async def remove_premium_cmd_handler(client, message):
 @Client.on_message(filters.command("plans"))
 async def plans_cmd_handler(client, message):                
     btn = [            
-        [InlineKeyboardButton("ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ʀᴇᴄᴇɪᴘᴛ 🧾", url="t.me/Rk_botowner")],
-        [InlineKeyboardButton("⚠️ ᴄʟᴏsᴇ / ᴅᴇʟᴇᴛᴇ ⚠️", callback_data="close_data")]
+        [InlineKeyboardButton("💸 𝗦𝗲𝗻𝗱 𝗣𝗮𝘆𝗺𝗲𝗻𝘁 𝗥𝗲𝗰𝗲𝗶𝗽𝘁 🧾", url="t.me/Rk_botowner")],
+        [InlineKeyboardButton("🚫 𝗖𝗹𝗼𝘀𝗲 / 𝗗𝗲𝗹𝗲𝘁𝗲 🚫", callback_data="close_data")]
     ]
     reply_markup = InlineKeyboardMarkup(btn)
     await message.reply_photo(
         photo=PAYMENT_QR,
-        caption="**Pʀᴇᴍɪᴜᴍ Fᴇᴀᴛᴜʀᴇs 🎁\n\n☆ No Need To Verify\n☆ Ad Free Experience\n☆ Unlimited Movie And Series",
+        caption="**𝐏𝐫𝐞𝐦𝐢𝐮𝐦 𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬 🎁\n\n✦ 𝐍𝐨 𝐍𝐞𝐞𝐝 𝐓𝐨 𝐕𝐞𝐫𝐢𝐟𝐲.\n✦ 𝐀𝐝-𝐅𝐫𝐞𝐞 𝐄𝐱𝐩𝐞𝐫𝐢𝐞𝐧𝐜𝐞.\n✦ 𝐔𝐧𝐥𝐢𝐦𝐢𝐭𝐞𝐝 𝐌𝐨𝐯𝐢𝐞𝐬 𝐚𝐧𝐝 𝐒𝐞𝐫𝐢𝐞𝐬.",
         reply_markup=reply_markup
     )
         
@@ -575,15 +575,15 @@ async def check_plans_cmd(client, message):
     if await db.has_premium_access(user_id):         
         remaining_time = await db.check_remaining_uasge(user_id)             
         expiry_time = remaining_time + datetime.datetime.now()
-        await message.reply_text(f"**Your plans details are :\n\nRemaining Time : {remaining_time}\n\nExpirytime : {expiry_time}**")
+        await message.reply_text(f"**𝗬𝗼𝘂𝗿 𝗽𝗹𝗮𝗻𝘀 𝗱𝗲𝘁𝗮𝗶𝗹𝘀 𝗮𝗿𝗲 :\n\nRemaining Time : {remaining_time}\n\nExpirytime : {expiry_time}**")
     else:
         btn = [ 
-            [InlineKeyboardButton("ɢᴇᴛ ғʀᴇᴇ ᴛʀᴀɪʟ ғᴏʀ 𝟻 ᴍɪɴᴜᴛᴇꜱ ☺️", callback_data="get_trail")],
-            [InlineKeyboardButton("ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅs", callback_data="buy_premium")],
-            [InlineKeyboardButton("⚠️ ᴄʟᴏsᴇ / ᴅᴇʟᴇᴛᴇ ⚠️", callback_data="close_data")]
+            [InlineKeyboardButton("🕒 𝗘𝗻𝗷𝗼𝘆 𝗮 𝟱-𝗠𝗶𝗻𝘂𝘁𝗲 𝗙𝗿𝗲𝗲 𝗧𝗿𝗶𝗮𝗹! ☺️", callback_data="get_trail")],
+            [InlineKeyboardButton("💳  𝗕𝘂𝘆 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗽𝘁𝗶𝗼𝗻: 𝗥𝗲𝗺𝗼𝘃𝗲 𝗔𝗱𝘀!", callback_data="buy_premium")],
+            [InlineKeyboardButton("🚫 𝗖𝗹𝗼𝘀𝗲 / 𝗗𝗲𝗹𝗲𝘁𝗲 🚫", callback_data="close_data")]
         ]
         reply_markup = InlineKeyboardMarkup(btn)
         m=await message.reply_sticker("CAACAgIAAxkBAAIBTGVjQbHuhOiboQsDm35brLGyLQ28AAJ-GgACglXYSXgCrotQHjibHgQ")         
-        await message.reply_text(f"**😢 You Don't Have Any Premium Subscription.\n\n Check Out Our Premium /plans**",reply_markup=reply_markup)
+        await message.reply_text(f"**😢 𝗬𝗼𝘂 𝗗𝗼𝗻'𝘁 𝗛𝗮𝘃𝗲 𝗔𝗻𝘆 𝗣𝗿𝗲𝗺𝗶𝘂𝗺 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗽𝘁𝗶𝗼𝗻.\n\n 𝗖𝗵𝗲𝗰𝗸 𝗢𝘂𝘁 𝗢𝘂𝗿 𝗣𝗿𝗲𝗺𝗶𝘂𝗺 /Plans 💎**",reply_markup=reply_markup)
         await asyncio.sleep(2)
         await m.delete()

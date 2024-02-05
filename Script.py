@@ -32,25 +32,25 @@ class script(object):
 ★ 𝗡𝗮𝗺𝗲: {}
 ★ 𝗜𝗗: <code>{}</code></b>"""
 
-    NO_RESULT_TXT = """<b>#NoResult
-★ Group Name: {}
-★ Group ID: <code>{}</code>
-★ Name: {}
+    NO_RESULT_TXT = """<b>#𝗡𝗼𝗥𝗲𝘀𝘂𝗹𝘁
+★ 𝗚𝗿𝗼𝘂𝗽 𝗡𝗮𝗺𝗲: {}
+★ 𝗚𝗿𝗼𝘂𝗽 𝗜𝗗: <code>{}</code>
+★ 𝗡𝗮𝗺𝗲: {}
 
-★ Message: {}</b>"""
+★ 𝗠𝗲𝘀𝘀𝗮𝗴𝗲: {}</b>"""
 
-    REQUEST_TXT = """★ Name: {}
-★ ID: <code>{}</code>
+    REQUEST_TXT = """<b>★ 𝗡𝗮𝗺𝗲: {}
+★ 𝗜𝗗: <code>{}</code>
 
-★ Message: {}"""
+★ 𝗠𝗲𝘀𝘀𝗮𝗴𝗲: {}</b>"""
 
-    NOT_FILE_TXT = """👋 Hello {},
+    NOT_FILE_TXT = """👋 𝗚𝗿𝗲𝗲𝘁𝗶𝗻𝗴𝘀 {},
 
-I can't find the <b>{}</b> in my database! 🥲
+𝗢𝗼𝗽𝘀𝗶𝗲! 🥲 𝗖𝗼𝘂𝗹𝗱𝗻'𝘁 𝗹𝗼𝗰𝗮𝘁𝗲 𝘁𝗵𝗲 <b>{}</b> 𝗶𝗻 𝗺𝘆 𝗱𝗮𝘁𝗮𝗯𝗮𝘀𝗲.
 
-👉 Google Search and check your spelling is correct.
-👉 Please read the Instructions to get better results.
-👉 Or not been released yet."""
+👉 𝗗𝗶𝘃𝗲 𝗶𝗻𝘁𝗼 𝗚𝗼𝗼𝗴𝗹𝗲, 𝗰𝗿𝗼𝘀𝘀-𝗰𝗵𝗲𝗰𝗸 𝘁𝗵𝗼𝘀𝗲 𝘀𝗽𝗲𝗹𝗹𝗶𝗻𝗴𝘀.
+👉 𝗚𝗹𝗮𝗻𝗰𝗲 𝗮𝘁 𝘁𝗵𝗲 𝗶𝗻𝘀𝘁𝗿𝘂𝗰𝘁𝗶𝗼𝗻𝘀 𝗳𝗼𝗿 𝘀𝗼𝗺𝗲 𝘄𝗶𝘇𝗮𝗿𝗱𝗹𝘆 𝘁𝗶𝗽𝘀.
+👉 𝗣𝗲𝗿𝗵𝗮𝗽𝘀 𝗶𝘁'𝘀 𝗯𝗲𝗶𝗻𝗴 𝗰𝗼𝘆 – 𝗻𝗼𝘁 𝗿𝗲𝗹𝗲𝗮𝘀𝗲𝗱 𝘆𝗲𝘁! 🕵️‍♂️✨"""
     
     EARN_TXT = """<b>ʜᴏᴡ ᴛᴏ ᴇᴀʀɴ ꜰʀᴏᴍ ᴛʜɪs ʙᴏᴛ
 
@@ -80,37 +80,43 @@ I can't find the <b>{}</b> in my database! 🥲
 
 📝 ɴᴏᴛᴇ:- ʏᴏᴜ sʜᴏᴜʟᴅ ɴᴏᴛ ʙᴇ ᴀɴ ᴀɴᴏɴʏᴍᴏᴜs ᴀᴅᴍɪɴ ɪɴ ɢʀᴏᴜᴘ. sᴇɴᴅ ᴄᴏᴍᴍᴀɴᴅ ᴡɪᴛʜᴏᴜᴛ ʙᴇɪɴɢ ᴀɴ ᴀɴᴏɴʏᴍᴜs ᴀᴅᴍɪɴ.</b>"""
 
-    IMDB_TEMPLATE = """✅ I Found: <code>{query}</code>
+    IMDB_TEMPLATE = """✅ 𝐕𝐨𝐢𝐥à! 𝐈 𝐃𝐢𝐬𝐜𝐨𝐯𝐞𝐫𝐞𝐝 <code>{query}</code>
 
-🏷 Title: <a href={url}>{title}</a>
-🎭 Genres: {genres}
-📆 Year: <a href={url}/releaseinfo>{year}</a>
-🌟 Rating: <a href={url}/ratings>{rating} / 10</a>
-☀️ Languages: {languages}
-📀 RunTime: {runtime} Minutes
+🏷 𝐓𝐢𝐭𝐥𝐞:  <a href={url}>{title}</a>
+🎭 𝐆𝐞𝐧𝐫𝐞𝐬: {genres}
+📆 𝐘𝐞𝐚𝐫: <a href={url}/releaseinfo>{year}</a>
+🌟 𝐑𝐚𝐭𝐢𝐧𝐠: <a href={url}/ratings>{rating} / 10</a>
+☀️ 𝐋𝐚𝐧𝐠𝐮𝐚𝐠𝐞𝐬: {languages}
+📀 𝐑𝐮𝐧𝐓𝐢𝐦𝐞: {runtime} Minutes
 
-🗣 Requested by: {message.from_user.mention}
-©️ Powered by: <b>{message.chat.title}</b>"""
+🗣 𝐒𝐮𝐦𝐦𝐨𝐧𝐞𝐝 𝐛𝐲: {message.from_user.mention}
+©️ 𝐄𝐦𝐩𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲: <b>{message.chat.title}</b>"""
 
-    FILE_CAPTION = """<i>{file_name}</i>
-
-🚫 ᴘʟᴇᴀsᴇ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ᴄʟᴏsᴇ ʙᴜᴛᴛᴏɴ ɪꜰ ʏᴏᴜ ʜᴀᴠᴇ sᴇᴇɴ ᴛʜᴇ ᴍᴏᴠɪᴇ 🚫"""
+    FILE_CAPTION = """<b>{file_name}
+    
+🔰 Main Channel: @VenomStoneNetwok</b>"""
 
     WELCOME_TEXT = """👋 𝗚𝗿𝗲𝗲𝘁𝗶𝗻𝗴𝘀, {mention}! 𝗦𝘁𝗲𝗽 𝗶𝗻𝘁𝗼 𝘁𝗵𝗲 𝗲𝗻𝗰𝗵𝗮𝗻𝘁𝗶𝗻𝗴 𝘄𝗼𝗿𝗹𝗱 𝗼𝗳 {title} 𝗴𝗿𝗼𝘂𝗽! 💞 𝗘𝘅𝗰𝗶𝘁𝗲𝗺𝗲𝗻𝘁 𝗮𝗻𝗱 𝗰𝗮𝗺𝗮𝗿𝗮𝗱𝗲𝗿𝗶𝗲 𝗮𝘄𝗮𝗶𝘁 𝘆𝗼𝘂! 🚀✨"""
 
-    HELP_TXT = """<b>🔹 𝗦𝗲𝗮𝗿𝗰𝗵 𝗠𝗼𝘃𝗶𝗲 𝘄𝗶𝘁𝗵 𝗖𝗼𝗿𝗿𝗲𝗰𝘁 𝗦𝗽𝗲𝗹𝗹𝗶𝗻𝗴:
-› 𝗮𝘃𝗮𝘁𝗮𝗿 𝟮𝟬𝟬𝟵 ✅
-› 𝗮𝘃𝗮𝘁𝗮𝗿 𝗵𝗶𝗻𝗱𝗶 ✅
-› 𝗮𝘃𝗮𝘁𝗮𝗿 𝗺𝗼𝘃𝗶𝗲 ❌
-› 𝗮𝘃𝗮𝘁𝗮𝗿 𝗵𝗶𝗻𝗱𝗶 𝗱𝘂𝗯𝗯𝗲𝗱 ❌
+    HELP_TXT = """<b>👀 𝗛𝗼𝘄 𝘁𝗼 𝗦𝗲𝗮𝗿𝗰𝗵 𝗠𝗼𝘃𝗶𝗲𝘀/𝗦𝗲𝗿𝗶𝗲𝘀:
 
-🔹 𝗦𝗲𝗮𝗿𝗰𝗵 𝗪𝗲𝗯 𝗦𝗲𝗿𝗶𝗲𝘀 𝗶𝗻 𝗧𝗵𝗶𝘀 𝗙𝗼𝗿𝗺𝗮𝘁:
-› 𝘃𝗶𝗸𝗶𝗻𝗴𝘀 𝗦𝟬𝟭 ✅
-› 𝘃𝗶𝗸𝗶𝗻𝗴𝘀 𝗦𝟬𝟭𝗘𝟬𝟭 ✅
-› 𝘃𝗶𝗸𝗶𝗻𝗴𝘀 𝗦𝟬𝟭 𝗵𝗶𝗻𝗱𝗶 ✅
-› 𝘃𝗶𝗸𝗶𝗻𝗴𝘀 𝗦𝟬𝟭 𝗵𝗶𝗻𝗱𝗶 𝗱𝘂𝗯𝗯𝗲𝗱 ❌
-› 𝘃𝗶𝗸𝗶𝗻𝗴𝘀 𝘀𝗲𝗮𝘀𝗼𝗻 𝟭 ❌
-› 𝘃𝗶𝗸𝗶𝗻𝗴𝘀 𝘄𝗲𝗯 𝘀𝗲𝗿𝗶𝗲𝘀 ❌</b>"""
+𝟭. 𝗦𝗲𝗮𝗿𝗰𝗵 𝗠𝗼𝘃𝗶𝗲 𝗡𝗮𝗺𝗲 𝘄𝗶𝘁𝗵 𝗖𝗼𝗿𝗿𝗲𝗰𝘁 𝗦𝗽𝗲𝗹𝗹𝗶𝗻𝗴:
+●✅ 𝗮𝘃𝗮𝘁𝗮𝗿 𝟮𝟬𝟬𝟵
+●✅ 𝗮𝘃𝗮𝘁𝗮𝗿 𝗵𝗶𝗻𝗱𝗶
+●❌ 𝗮𝘃𝗮𝘁𝗮𝗿 𝗺𝗼𝘃𝗶𝗲
+●❌ 𝗮𝘃𝗮𝘁𝗮𝗿 𝗵𝗶𝗻𝗱𝗶 𝗱𝘂𝗯𝗯𝗲𝗱
+
+𝟮. 𝗦𝗲𝗮𝗿𝗰𝗵 𝗪𝗲𝗯 𝗦𝗲𝗿𝗶𝗲𝘀 𝗶𝗻 𝗧𝗵𝗶𝘀 𝗙𝗼𝗿𝗺𝗮𝘁:
+●✅ 𝘃𝗶𝗸𝗶𝗻𝗴𝘀 𝗦𝟬𝟭
+●✅ 𝘃𝗶𝗸𝗶𝗻𝗴𝘀 𝗦𝟬𝟭𝗘𝟬𝟭
+●✅ 𝘃𝗶𝗸𝗶𝗻𝗴𝘀 𝗦𝟬𝟭 𝗵𝗶𝗻𝗱𝗶
+●❌ 𝘃𝗶𝗸𝗶𝗻𝗴𝘀 𝗦𝟬𝟭 𝗵𝗶𝗻𝗱𝗶 𝗱𝘂𝗯𝗯𝗲𝗱
+●❌ 𝘃𝗶𝗸𝗶𝗻𝗴𝘀 𝘀𝗲𝗮𝘀𝗼𝗻 𝟭
+●❌ 𝘃𝗶𝗸𝗶𝗻𝗴𝘀 𝘄𝗲𝗯 𝘀𝗲𝗿𝗶𝗲𝘀
+
+𝟯. 𝗔𝘃𝗼𝗶𝗱 𝗨𝘀𝗶𝗻𝗴 𝗪𝗼𝗿𝗱𝘀 𝗟𝗶𝗸𝗲 𝗦𝗲𝗮𝘀𝗼𝗻𝘀/𝗘𝗽𝗶𝘀𝗼𝗱𝗲𝘀/𝗦𝗲𝗿𝗶𝗲𝘀/𝗗𝘂𝗯𝗯𝗲𝗱/𝗠𝗼𝘃𝗶𝗲𝘀/𝗦𝗲𝗻𝗱/𝗛𝗗, 𝗲𝘁𝗰.
+
+✦ 𝗡𝗼𝘁𝗲: 𝗜𝗳 𝗬𝗼𝘂 𝗖𝗮𝗻'𝘁 𝗙𝗶𝗻𝗱, 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗚𝗿𝗼𝘂𝗽.</b>"""
     
     ADMIN_COMMAND_TXT = """<b>Here are the admin commands for the bot:
 
@@ -151,6 +157,10 @@ I can't find the <b>{}</b> in my database! 🥲
 
     SOURCE_TXT = """<b>𝗡𝗢𝗧𝗘:
 
-⚠️ 𝗧𝗵𝗶𝘀 𝗕𝗼𝘁 𝗶𝘀 𝗡𝗼𝘁 𝗮𝗻 𝗢𝗽𝗲𝗻 𝗦𝗼𝘂𝗿𝗰𝗲 𝗣𝗿𝗼𝗷𝗲𝗰𝘁! 𝗧𝗵𝗮𝗻𝗸𝘀 𝘁𝗼 𝗥𝗞_𝗕𝗼𝘁𝘇 (𝗥𝗶𝘀𝗵𝗶𝗸𝗲𝘀𝗵), 𝗠𝗞𝗡_𝗕𝗼𝘁𝘀 & 𝗘𝘃𝗮𝗹𝗺𝗮𝗿𝗶𝗮 𝗗𝗲𝘃𝘀 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗕𝗮𝘀𝗲 𝗖𝗼𝗱𝗲𝘀. 𝗦𝗽𝗲𝗰𝗶𝗮𝗹 𝗧𝗵𝗮𝗻𝗸𝘀 𝘁𝗼 𝗠𝘆 𝗧𝗚 𝗙𝗿𝗶𝗲𝗻𝗱𝘀 𝘁𝗼𝗼.
+⚠️ 𝗧𝗵𝗶𝘀 𝗕𝗼𝘁 𝗶𝘀 𝗡𝗼𝘁 𝗮𝗻 𝗢𝗽𝗲𝗻 𝗦𝗼𝘂𝗿𝗰𝗲 𝗣𝗿𝗼𝗷𝗲𝗰𝘁! 
+
+𝗧𝗵𝗮𝗻𝗸𝘀 𝘁𝗼 𝗥𝗞_𝗕𝗼𝘁𝘇 (𝗥𝗶𝘀𝗵𝗶𝗸𝗲𝘀𝗵), 𝗠𝗞𝗡_𝗕𝗼𝘁𝘀 & 𝗘𝘃𝗮𝗹𝗺𝗮𝗿𝗶𝗮 𝗗𝗲𝘃𝘀 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗕𝗮𝘀𝗲 𝗖𝗼𝗱𝗲𝘀. 
+
+𝗦𝗽𝗲𝗰𝗶𝗮𝗹 𝗧𝗵𝗮𝗻𝗸𝘀 𝘁𝗼 𝗠𝘆 𝗧𝗚 𝗙𝗿𝗶𝗲𝗻𝗱𝘀 𝘁𝗼𝗼.
 
 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗱 𝗯𝘆 @VenomStoneNetwork👨‍💻</b>"""

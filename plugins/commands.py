@@ -549,7 +549,7 @@ async def remove_premium_cmd_handler(client, message):
             await message.reply_text("Premium access removed to the user.")
             await client.send_message(
                 chat_id=user_id,
-                text=f"<b>premium removed by admins \n\n Contact Admin if this is mistake \n\n 👮 Admin : @Rk_botowner \n</b>",                
+                text=f"<b>premium removed by admins \n\n Contact Admin if this is mistake \n\n 👮 Admin : @VenomMoviesBot \n</b>",                
             )
         else:
             await message.reply_text("Invalid time format.'")
@@ -565,7 +565,11 @@ async def plans_cmd_handler(client, message):
     reply_markup = InlineKeyboardMarkup(btn)
     await message.reply_photo(
         photo=PAYMENT_QR,
-        caption="**𝐏𝐫𝐞𝐦𝐢𝐮𝐦 𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬 🎁\n\n✦ 𝐍𝐨 𝐍𝐞𝐞𝐝 𝐓𝐨 𝐕𝐞𝐫𝐢𝐟𝐲.\n✦ 𝐀𝐝-𝐅𝐫𝐞𝐞 𝐄𝐱𝐩𝐞𝐫𝐢𝐞𝐧𝐜𝐞.\n✦ 𝐔𝐧𝐥𝐢𝐦𝐢𝐭𝐞𝐝 𝐌𝐨𝐯𝐢𝐞𝐬 𝐚𝐧𝐝 𝐒𝐞𝐫𝐢𝐞𝐬.",
+        caption="**● 𝗣𝗿𝗲𝗺𝗶𝘂𝗺 𝗳𝗲𝗮𝘁𝘂𝗿𝗲𝘀!
+
+𝟭. 𝗡𝗼 𝗻𝗲𝗲𝗱 𝘁𝗼 𝘃𝗲𝗿𝗶𝗳𝘆.
+𝟮. 𝗡𝗼 𝗻𝗲𝗲𝗱 𝘁𝗼 𝘄𝗮𝘁𝗰𝗵 𝗮𝗱𝘀, 𝗰𝗼𝗺𝗽𝗹𝗲𝘁𝗲𝗹𝘆 𝗮𝗱 𝗳𝗿𝗲𝗲 𝗲𝘅𝗽𝗲𝗿𝗶𝗲𝗻𝗰𝗲.
+𝟯. 𝗚𝗲𝘁 𝗨𝗻𝗹𝗶𝗺𝗶𝘁𝗲𝗱 𝗺𝗼𝘃𝗶𝗲𝘀 𝗮𝗻𝗱 𝘀𝗲𝗿𝗶𝗲𝘀 𝗱𝗶𝗿𝗲𝗰𝘁𝗹𝘆 𝗶𝗻 𝗳𝗶𝗹𝗲𝘀 𝗮𝗻𝗱 𝘃𝗶𝗱𝗲𝗼𝘀 𝗳𝗼𝗿𝗺𝗮𝘁.",
         reply_markup=reply_markup
     )
         

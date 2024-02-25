@@ -128,19 +128,19 @@ async def start(client, message):
             )   
             if settings.get('is_stream', IS_STREAM):
                 btn = [[
-                    InlineKeyboardButton("✛ ᴡᴀᴛᴄʜ & ᴅᴏᴡɴʟᴏᴀᴅ ✛", callback_data=f"stream#{file.file_id}")
+                    InlineKeyboardButton("𝗪𝗮𝘁𝗰𝗵 & 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱", callback_data=f"stream#{file.file_id}")
                 ],[
                     InlineKeyboardButton('⚡️ 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 ⚡️', url=UPDATES_LINK),
                     InlineKeyboardButton('💡 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗚𝗿𝗼𝘂𝗽 💡', url=SUPPORT_LINK)
                 ],[
-                    InlineKeyboardButton('⁉️ ᴄʟᴏsᴇ ⁉️', callback_data='close_data')
+                    InlineKeyboardButton('𝗖𝗟𝗢𝗦𝗘', callback_data='close_data')
                 ]]
             else:
                 btn = [[
                     InlineKeyboardButton('⚡️ 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 ⚡️', url=UPDATES_LINK),
                     InlineKeyboardButton('💡 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗚𝗿𝗼𝘂𝗽 💡', url=SUPPORT_LINK)
                 ],[
-                    InlineKeyboardButton('⁉️ ᴄʟᴏsᴇ ⁉️', callback_data='close_data')
+                    InlineKeyboardButton('𝗖𝗟𝗢𝗦𝗘', callback_data='close_data')
                 ]]
             await client.send_cached_media(
                 chat_id=message.from_user.id,
@@ -178,19 +178,19 @@ async def start(client, message):
     )
     if settings.get('is_stream', IS_STREAM):
         btn = [[
-            InlineKeyboardButton("✛ ᴡᴀᴛᴄʜ & ᴅᴏᴡɴʟᴏᴀᴅ ✛", callback_data=f"stream#{file_id}")
+            InlineKeyboardButton("𝗪𝗮𝘁𝗰𝗵 & 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱", callback_data=f"stream#{file_id}")
         ],[
             InlineKeyboardButton('⚡️ 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 ⚡️', url=UPDATES_LINK),
             InlineKeyboardButton('💡 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗚𝗿𝗼𝘂𝗽 💡', url=SUPPORT_LINK)
         ],[
-            InlineKeyboardButton('⁉️ ᴄʟᴏsᴇ ⁉️', callback_data='close_data')
+            InlineKeyboardButton('𝗖𝗟𝗢𝗦𝗘', callback_data='close_data')
         ]]
     else:
         btn = [[
             InlineKeyboardButton('⚡️ 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 ⚡️', url=UPDATES_LINK),
             InlineKeyboardButton('💡 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗚𝗿𝗼𝘂𝗽 💡', url=SUPPORT_LINK)
         ],[
-            InlineKeyboardButton('⁉️ ᴄʟᴏsᴇ ⁉️', callback_data='close_data')
+            InlineKeyboardButton('𝗖𝗟𝗢𝗦𝗘', callback_data='close_data')
         ]]
     await client.send_cached_media(
         chat_id=message.from_user.id,

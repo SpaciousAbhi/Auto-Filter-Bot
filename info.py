@@ -83,7 +83,7 @@ TUTORIAL = environ.get("TUTORIAL", "https://t.me/VenomStoneMovies/2430")
 VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/VenomStoneMovies/2430")
 
 # Bot settings
-DELETE_TIME = int(environ.get('DELETE_TIME', 600)) # Add time in seconds 
+DELETE_TIME = int(environ.get('DELETE_TIME', 3600)) # Add time in seconds 
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 MAX_BTN = int(environ.get('MAX_BTN', 10)) #don't change anything in Language 
 LANGUAGES = [language.lower() for language in environ.get('LANGUAGES', 'english hindi telugu tamil kannada malayalam').split()]
@@ -96,16 +96,16 @@ WELCOME_TEXT = environ.get("WELCOME_TEXT", script.WELCOME_TEXT)
 INDEX_EXTENSIONS = [extensions.lower() for extensions in environ.get('INDEX_EXTENSIONS', 'mp4 mkv').split()]
 
 # boolean settings 
-GROUP_FSUB = is_enabled('GROUP_FSUB', False) 
-PM_SEARCH = is_enabled('PM_SEARCH', False) #switch True or False for searching results in bot pm😃
+GROUP_FSUB = is_enabled('GROUP_FSUB', True) 
+PM_SEARCH = is_enabled('PM_SEARCH', True) #switch True or False for searching results in bot pm😃
 IS_VERIFY = is_enabled('IS_VERIFY', False)
 AUTO_DELETE = is_enabled('AUTO_DELETE', True)
-WELCOME = is_enabled('WELCOME', False)
+WELCOME = is_enabled('WELCOME', True)
 PROTECT_CONTENT = is_enabled('PROTECT_CONTENT', False)
 LONG_IMDB_DESCRIPTION = is_enabled("LONG_IMDB_DESCRIPTION", False)
-LINK_MODE = is_enabled("LINK_MODE", False)
+LINK_MODE = is_enabled("LINK_MODE", True)
 AUTO_FILTER = is_enabled('AUTO_FILTER', True)
-IMDB = is_enabled('IMDB', False)
+IMDB = is_enabled('IMDB', True)
 SPELL_CHECK = is_enabled("SPELL_CHECK", True)
 SHORTLINK = is_enabled('SHORTLINK', True)
 

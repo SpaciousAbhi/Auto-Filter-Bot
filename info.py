@@ -76,9 +76,9 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Files')
 
 # Links
-SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/VenomStoneChat')
+SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/VenomStoneMoviesGroup')
 UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/VenomStoneNetwork')
-FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/VenomStoneChat')
+FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/VenomStoneMoviesGroup')
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/VenomStoneMovies/2430")
 VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/VenomStoneMovies/2430")
 

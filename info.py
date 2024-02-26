@@ -85,7 +85,7 @@ VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/VenomStoneMovies/
 # Bot settings
 DELETE_TIME = int(environ.get('DELETE_TIME', 600)) # Add time in seconds 
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
-MAX_BTN = int(environ.get('MAX_BTN', 10)) #don't change anything in Language 
+MAX_BTN = int(environ.get('MAX_BTN', 5)) #don't change anything in Language 
 LANGUAGES = [language.lower() for language in environ.get('LANGUAGES', 'english hindi telugu tamil kannada malayalam').split()]
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", script.IMDB_TEMPLATE)
 FILE_CAPTION = environ.get("FILE_CAPTION", script.FILE_CAPTION)
@@ -112,7 +112,7 @@ SHORTLINK = is_enabled('SHORTLINK', True)
 PAYMENT_QR = environ.get('PAYMENT_QR', 'https://telegra.ph/file/6240fb89bb16a7713f619.png') #telegraph link of your QR code , make from @professormp_bot
 
 # for stream
-IS_STREAM = is_enabled('IS_STREAM', False) #true if you want stream feature active in your bot
+IS_STREAM = is_enabled('IS_STREAM', True) #true if you want stream feature active in your bot
 BIN_CHANNEL = environ.get("BIN_CHANNEL", "-1001959042180") #if is_stream = true then add a channel id ex: -10026393639
 if len(BIN_CHANNEL) == 0:
     print('Error - BIN_CHANNEL is missing, exiting now')

@@ -78,7 +78,7 @@ async def start(client, message):
                 InlineKeyboardButton("📎 𝗚𝗲𝘁 𝗙𝗶𝗹𝗲 📌", url=f'https://t.me/{temp.U_NAME}?start={verify_status["link"]}')
             ]]
             reply_markup = InlineKeyboardMarkup(btn)
-        await message.reply(f"✅ 𝗬𝗼𝘂 𝘀𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆 𝘃𝗲𝗿𝗶𝗳𝗶𝗲𝗱 𝘂𝗻𝘁𝗶𝗹: {get_readable_time(VERIFY_EXPIRE)}", reply_markup=reply_markup, protect_content=True)
+        await message.reply(f"✅ 𝗬𝗼𝘂 𝘀𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆 𝘃𝗲𝗿𝗶𝗳𝗶𝗲𝗱 𝘂𝗻𝘁𝗶𝗹: {get_readable_time(VERIFY_EXPIRE)}", reply_markup=reply_markup, protect_content=False)
         return
     
     verify_status = await get_verify_status(message.from_user.id)
@@ -92,7 +92,7 @@ async def start(client, message):
             ],[
                 InlineKeyboardButton('📘 𝗧𝘂𝘁𝗼𝗿𝗶𝗮𝗹 🗳', url=VERIFY_TUTORIAL)
             ]]
-            await message.reply("𝗬𝗼𝘂 𝗻𝗼𝘁 𝘃𝗲𝗿𝗶𝗳𝗶𝗲𝗱 𝘁𝗼𝗱𝗮𝘆! 𝗞𝗶𝗻𝗱𝗹𝘆 𝘃𝗲𝗿𝗶𝗳𝘆 𝗻𝗼𝘄. 🔐", reply_markup=InlineKeyboardMarkup(btn), protect_content=True)
+            await message.reply("𝗬𝗼𝘂 𝗻𝗼𝘁 𝘃𝗲𝗿𝗶𝗳𝗶𝗲𝗱 𝘁𝗼𝗱𝗮𝘆! 𝗞𝗶𝗻𝗱𝗹𝘆 𝘃𝗲𝗿𝗶𝗳𝘆 𝗻𝗼𝘄. 🔐", reply_markup=InlineKeyboardMarkup(btn), protect_content=False)
             return
     else:
         pass
@@ -165,7 +165,7 @@ async def start(client, message):
             ],[
                 InlineKeyboardButton("🌐 𝗛𝗼𝘄 𝘁𝗼 𝗢𝗽𝗲𝗻 𝗟𝗶𝗻𝗸 🌐", url=settings['tutorial'])
             ]]
-            await message.reply(f"[{get_size(files.file_size)}] {files.file_name}\n\nYour file is ready, Please get using this link. 👍", reply_markup=InlineKeyboardMarkup(btn), protect_content=True)
+            await message.reply(f"[{get_size(files.file_size)}] {files.file_name}\n\nYour file is ready, Please get using this link. 👍", reply_markup=InlineKeyboardMarkup(btn), protect_content=False)
             return
     else:
         pass

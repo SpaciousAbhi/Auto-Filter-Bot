@@ -234,7 +234,7 @@ async def languages_cb_handler(client: Client, query: CallbackQuery):
 async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
     _, lang, key, offset, req = query.data.split("#")
     if int(req) != query.from_user.id:
-        return await query.answer(f"Hello {query.from_user.first_name},\nDon't Click Other Results!", show_alert=True)
+        return await query.answer(f"Hello {query.from_user.first_name},\nDon't Click Other Results!", show_alert=False)
 
     search = BUTTONS.get(key)
     cap = CAP.get(key)
@@ -286,7 +286,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
 async def lang_next_page(bot, query):
     ident, req, key, lang, l_offset, offset = query.data.split("#")
     if int(req) != query.from_user.id:
-        return await query.answer(f"Hello {query.from_user.first_name},\nDon't Click Other Results!", show_alert=True)
+        return await query.answer(f"Hello {query.from_user.first_name},\nDon't Click Other Results!", show_alert=False)
 
     try:
         l_offset = int(l_offset)
@@ -361,7 +361,7 @@ async def lang_next_page(bot, query):
 async def advantage_spoll_choker(bot, query):
     _, id, user = query.data.split('#')
     if int(user) != 0 and query.from_user.id != int(user):
-        return await query.answer(f"Hello {query.from_user.first_name},\nDon't Click Other Results!", show_alert=True)
+        return await query.answer(f"Hello {query.from_user.first_name},\nDon't Click Other Results!", show_alert=False)
 
     movie = await get_poster(id, id=True)
     search = movie.get('title')
@@ -400,7 +400,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ident, file_id = query.data.split("#")
         user = query.message.reply_to_message.from_user.id
         if int(user) != 0 and query.from_user.id != int(user):
-            return await query.answer(f"Hello {query.from_user.first_name},\nDon't Click Other Results!", show_alert=True)
+            return await query.answer(f"Hello {query.from_user.first_name},\nDon't Click Other Results!", show_alert=False)
         await query.answer(url=f"https://t.me/{temp.U_NAME}?start=file_{query.message.chat.id}_{file_id}")
         
     elif query.data == "get_trail":
@@ -671,7 +671,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ident, key = query.data.split("#")
         user = query.message.reply_to_message.from_user.id
         if int(user) != 0 and query.from_user.id != int(user):
-            return await query.answer(f"Hello {query.from_user.first_name},\nDon't Click Other Results!", show_alert=True)
+            return await query.answer(f"Hello {query.from_user.first_name},\nDon't Click Other Results!", show_alert=False)
         
         files = temp.FILES.get(key)
         if not files:

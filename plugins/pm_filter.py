@@ -140,7 +140,7 @@ async def pm_search(client, message):
 async def next_page(bot, query):
     ident, req, key, offset = query.data.split("_")
     if int(req) not in [query.from_user.id, 0]:
-        return await query.answer(f"Hello {query.from_user.first_name},\nDon't Click Other Results!", show_alert=True)
+        return await query.answer(f"Hello {query.from_user.first_name},\nDon't Click Others Results!", show_alert=False)
     try:
         offset = int(offset)
     except:
@@ -221,7 +221,7 @@ async def next_page(bot, query):
 async def languages_cb_handler(client: Client, query: CallbackQuery):
     _, key, req, offset = query.data.split("#")
     if int(req) != query.from_user.id:
-        return await query.answer(f"Hello {query.from_user.first_name},\nDon't Click Other Results!", show_alert=True)
+        return await query.answer(f"Hello {query.from_user.first_name},\nDon't Click Others Results!", show_alert=False)
     btn = [[
         InlineKeyboardButton(text=lang.title(), callback_data=f"lang_search#{lang}#{key}#{offset}#{req}"),
     ]
